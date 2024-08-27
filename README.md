@@ -10,9 +10,6 @@ This is a gateway for sending messages. A queue of messages is created that can 
 
 run `docker-compose up`
 
-### Whatsapp setup
-use qr code to connect to whatsapp by reading the output from edwiges
-
 ## Examples
 
 ### Send message as discord compatible to all services defined in environment variable
