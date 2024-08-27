@@ -1,0 +1,20 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gwmsg:${TAG:-latest}
+    environment:
+      API_HASH: ${API_HASH:-test}
+      GROUP_ID: ${GROUP_ID:-xxxxxxxxxxxx@g.us,yyyyyyyyyyy@g.us}
+      URL_DISCORD: ${URL_DISCORD:-https://httpbin.test.com/200}
+      URL_TEAMS: ${URL_TEAMS:-https://urlTeams.webhook.office.com/webhookb2}
+      DEFAULT_SERVICES: ${DEFAULT_SERVICES:-whatsapp,discord,teams}
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - gwmsg
+
+networks:
+  gwmsg:
+      name: gwmsg
