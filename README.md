@@ -1,5 +1,5 @@
 # Gateway Message
-This is a gateway for sending messages. A queue of messages is created that can be redirected to various communication channels. Messages are currently being sent to whatsapp-web
+This is a gateway for sending messages. A queue of messages is created that can be redirected to various communication channels.
 
 ## Requirements
 - Composer
